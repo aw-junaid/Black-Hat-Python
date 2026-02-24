@@ -12,7 +12,6 @@
 
 # Contact With Me:
 
-
   <a href="https://www.youtube.com/@awjunaid/featured" target="_blank">
     <img src="https://img.shields.io/static/v1?message=Youtube&logo=youtube&label=&color=FF0000&logoColor=white&labelColor=&style=for-the-badge" height="27" alt="youtube logo"  />
   </a>
@@ -35,9 +34,7 @@
     <img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&labelColor=&style=for-the-badge" height="27" alt="discord logo"  />
   </a>
 
-
-
-  # 💰 You can help me by Donating
+# 💰 You can help me by Donating
   [![BuyMeACoffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/awjunaid) 
 
 > [!Note]
@@ -49,6 +46,7 @@ This repository contains tools and scripts sourced from various GitHub repositor
 - [Mastering Python Scripting for System Administrators](https://github.com/PacktPublishing/Mastering-Python-Scripting-for-System-Administrators-)
 - [python-pentest-tools](https://github.com/dloss/python-pentest-tools/blob/master/README.md)
 
+---
 
 # Table of Content
 
@@ -263,32 +261,49 @@ This repository contains tools and scripts sourced from various GitHub repositor
 - AWS / Azure / GCP Misconfiguration Scanners
 - S3 Bucket Enumeration
 
+## ⚙️ 18. Automating Administrative Tasks
 
-### Automating Administrative Task
+### Input & Output Handling
+- [Accept input from a file](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Automating%20Regular%20Administrative%20Activities/accept_by_input_file.md)
+- [Accept input from a pipe](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Automating%20Regular%20Administrative%20Activities/accept_by_pipe.md)
+- [Capture and process command output](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Automating%20Regular%20Administrative%20Activities/capture_output.md)
+- [Redirect input/output streams](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Automating%20Regular%20Administrative%20Activities/Redirect%20input-output%20streams.md)
 
-- [Accept input from a file.](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Automating%20Regular%20Administrative%20Activities/accept_by_input_file.md)
-- [Accept input from a pipe.](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Automating%20Regular%20Administrative%20Activities/accept_by_pipe.md)
-- [Capture and process command output.](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Automating%20Regular%20Administrative%20Activities/capture_output.md)
-- [Execute external system commands.](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Automating%20Regular%20Administrative%20Activities/execute_external_commands.md)
-- [Generate and handle warning messages.](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Automating%20Regular%20Administrative%20Activities/generate_warnings.md)
-- [Example of using `getpass` for secure password input.](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Automating%20Regular%20Administrative%20Activities/getpass_example.md)
-- [Handle password input securely.](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Automating%20Regular%20Administrative%20Activities/handling_password.md)
-- [List directory contents.](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Automating%20Regular%20Administrative%20Activities/list_dir.md)
-- [Example of using Python's logging module.](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Automating%20Regular%20Administrative%20Activities/logging_example.md)
-- [Log warnings and error codes.](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Automating%20Regular%20Administrative%20Activities/logging_warnings_codes.md)
-- [Run scripts without user prompts.](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Automating%20Regular%20Administrative%20Activities/no_prompt.md)
-- [Open a web page or URL.](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Automating%20Regular%20Administrative%20Activities/open_web.md)
-- [Example of using `os` module for directory operations.](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Automating%20Regular%20Administrative%20Activities/os_dir_example.md)
-- [Reprompt for password input.](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Automating%20Regular%20Administrative%20Activities/password_prompt_again.md)
-- [Set CPU usage limits for processes.](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Automating%20Regular%20Administrative%20Activities/put_cpu_limit.md)
-- [Read and parse configuration files.](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Automating%20Regular%20Administrative%20Activities/read_config_file.md)
-- [Read and process multiple configuration files.](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Automating%20Regular%20Administrative%20Activities/read_many_config_file.md)
-- [Redirect input/output streams.](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Automating%20Regular%20Administrative%20Activities/Redirect%20input-output%20streams.md)
-- [Create backups of files or directories.](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Automating%20Regular%20Administrative%20Activities/Create%20backups%20of%20files%20or%20directories.md)
-- [Run scripts with user prompts.](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Automating%20Regular%20Administrative%20Activities/Run%20scripts%20with%20user%20prompts.md)
+### System Commands & Execution
+- [Execute external system commands](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Automating%20Regular%20Administrative%20Activities/execute_external_commands.md)
+- [Run scripts without user prompts](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Automating%20Regular%20Administrative%20Activities/no_prompt.md)
+- [Run scripts with user prompts](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Automating%20Regular%20Administrative%20Activities/Run%20scripts%20with%20user%20prompts.md)
 
+### File & Directory Operations
+- [List directory contents](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Automating%20Regular%20Administrative%20Activities/list_dir.md)
+- [Example of using `os` module for directory operations](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Automating%20Regular%20Administrative%20Activities/os_dir_example.md)
+- [Create backups of files or directories](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Automating%20Regular%20Administrative%20Activities/Create%20backups%20of%20files%20or%20directories.md)
 
-### Books
+### Configuration Management
+- [Read and parse configuration files](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Automating%20Regular%20Administrative%20Activities/read_config_file.md)
+- [Read and process multiple configuration files](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Automating%20Regular%20Administrative%20Activities/read_many_config_file.md)
+
+### Security & Authentication
+- [Handle password input securely](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Automating%20Regular%20Administrative%20Activities/handling_password.md)
+- [Example of using `getpass` for secure password input](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Automating%20Regular%20Administrative%20Activities/getpass_example.md)
+- [Reprompt for password input](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Automating%20Regular%20Administrative%20Activities/password_prompt_again.md)
+
+### Logging & Monitoring
+- [Generate and handle warning messages](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Automating%20Regular%20Administrative%20Activities/generate_warnings.md)
+- [Example of using Python's logging module](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Automating%20Regular%20Administrative%20Activities/logging_example.md)
+- [Log warnings and error codes](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Automating%20Regular%20Administrative%20Activities/logging_warnings_codes.md)
+
+### Resource Management
+- [Set CPU usage limits for processes](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Automating%20Regular%20Administrative%20Activities/put_cpu_limit.md)
+
+### Web Operations
+- [Open a web page or URL](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Automating%20Regular%20Administrative%20Activities/open_web.md)
+
+---
+
+# 📚 Resources
+
+## Books
 
 -   [Violent Python](https://www.elsevier.com/books/violent-python/unknown/978-1-59749-957-6)
 -   [Grey Hat Python](http://www.nostarch.com/ghpython.htm)
@@ -301,222 +316,158 @@ This repository contains tools and scripts sourced from various GitHub repositor
 -   [The Beginner's Guide to IDAPython](https://leanpub.com/IDAPython-Book)
 -   [Python for Offensive PenTest: A Practical Guide to Ethical Hacking and Penetration Testing Using Python](https://www.amazon.com/Python-Offensive-PenTest-practical-penetration/dp/1788838971)
 
-## Python Tools for Penetration Testing
+---
 
+# 🛠️ Python Tools for Penetration Testing
 
-### Network
+## 🌐 Network Tools
 
--   [Scapy](https://scapy.net): send, sniff and dissect
-    and forge network packets. Usable interactively or as a library
--   [Impacket](http://oss.coresecurity.com/projects/impacket.html):
-    craft and decode network packets. Includes support for higher-level
-    protocols such as NMB and SMB
--   [SMBMap](https://github.com/ShawnDEvans/smbmap): 
-    enumerate Samba share drives across an entire domain
--   [dpkt](https://github.com/kbandla/dpkt): fast, simple packet
-    creation/parsing, with definitions for the basic TCP/IP protocols
+### Core Network Libraries
+-   [Scapy](https://scapy.net): Send, sniff, dissect and forge network packets
+-   [Impacket](http://oss.coresecurity.com/projects/impacket.html): Craft and decode network packets with support for NMB and SMB
+-   [dpkt](https://github.com/kbandla/dpkt): Fast, simple packet creation/parsing with TCP/IP protocol definitions
+-   [pypcap](https://github.com/dugsong/pypcap), [Pcapy](https://github.com/helpsystems/pcapy), [Pcapy-NG](https://github.com/stamparm/pcapy-ng), [libpcap](https://pypi.org/project/libpcap/): Python bindings for libpcap
+-   [libdnet](https://github.com/ofalk/libdnet/): Low-level networking routines
+
+### Network Reconnaissance & Enumeration
+-   [SMBMap](https://github.com/ShawnDEvans/smbmap): Enumerate Samba share drives across an entire domain
 -   [AutoRecon](https://github.com/Tib3rius/AutoRecon): Multi-threaded network reconnaissance tool
--   [Mitm6](https://github.com/fox-it/mitm6): IPv6-based MITM tool that exploits IPv6 features to conduct man-in-the-middle attacks
--   [Habu](https://github.com/portantier/habu): 
-    python network hacking toolkit
--   [Knock Subdomain Scan](https://github.com/guelfoweb/knock), enumerate
-    subdomains on a target domain through a wordlist
--   [SubBrute](https://github.com/TheRook/subbrute), fast subdomain
-    enumeration tool
--   [pypcap](https://github.com/dugsong/pypcap),
-    [Pcapy](https://github.com/helpsystems/pcapy),
-    [Pcapy-NG](https://github.com/stamparm/pcapy-ng) and
-    [libpcap](https://pypi.org/project/libpcap/): several different
-    Python bindings for libpcap
--   [libdnet](https://github.com/ofalk/libdnet/): low-level networking
-    routines, including interface lookup and Ethernet frame transmission
--   [Mallory](https://github.com/intrepidusgroup/mallory), extensible
-    TCP/UDP man-in-the-middle proxy, supports modifying non-standard
-    protocols on the fly
--   [Pytbull-NG](https://github.com/netrunn3r/pytbull-ng/): flexible IDS/IPS testing
-    framework (shipped with more than 300 tests)
--   [Spoodle](https://github.com/vjex/spoodle): A mass subdomain + poodle
-    vulnerability scanner
+-   [Habu](https://github.com/portantier/habu): Python network hacking toolkit
+-   [Knock Subdomain Scan](https://github.com/guelfoweb/knock): Enumerate subdomains through wordlist
+-   [SubBrute](https://github.com/TheRook/subbrute): Fast subdomain enumeration tool
+-   [Spoodle](https://github.com/vjex/spoodle): Mass subdomain + poodle vulnerability scanner
 
-### Debugging and reverse engineering
+### Network Attacks & MITM
+-   [Mitm6](https://github.com/fox-it/mitm6): IPv6-based MITM tool
+-   [Mallory](https://github.com/intrepidusgroup/mallory): Extensible TCP/UDP man-in-the-middle proxy
+-   [Pytbull-NG](https://github.com/netrunn3r/pytbull-ng/): Flexible IDS/IPS testing framework
 
--   [Frida](http://www.frida.re/): A dynamic instrumentation framework which can
-    inject scripts into running processes
--   [Capstone](http://www.capstone-engine.org/): lightweight
-    multi-platform, multi-architecture disassembly framework with Python
-    bindings
--   [Unicorn Engine](https://www.unicorn-engine.org/): CPU emulator framework with Python bindings
--   [Androguard](https://github.com/androguard/androguard): reverse
-    engineering and analysis of Android applications
--   [Paimei](https://github.com/OpenRCE/paimei): reverse engineering
-    framework, includes [PyDBG](https://github.com/OpenRCE/pydbg), PIDA,
-    pGRAPH
--   [IDAPython](https://github.com/idapython/src): IDA Pro plugin that
-    integrates the Python programming language, allowing scripts to run
-    in IDA Pro
--   [PyEMU](hhttps://github.com/codypierce/pyemu/): fully scriptable IA-32
-    emulator, useful for malware analysis
--   [pefile](https://github.com/erocarrera/pefile): read and work with
-    Portable Executable (aka PE) files
--   [pydasm](https://github.com/jtpereyda/libdasm/tree/master/pydasm):
-    Python interface to the [libdasm](https://github.com/jtpereyda/libdasm/tree/master/)
-    x86 disassembling library
--   [PyDbgEng](http://pydbgeng.sourceforge.net/): Python wrapper for the
-    Microsoft Windows Debugging Engine
--   [diStorm](https://github.com/gdabah/distorm): disassembler library
-    for AMD64, licensed under the BSD license
--   [python-ptrace](http://python-ptrace.readthedocs.org/):
-    debugger using ptrace (Linux, BSD and Darwin system call to trace
-    processes) written in Python
--   [Keystone](http://www.keystone-engine.org): lightweight multi-platform,
-    multi-architecture assembler framework with Python bindings
--   [PyBFD](https://github.com/Groundworkstech/pybfd/): Python interface
-    to the GNU Binary File Descriptor (BFD) library
--   [CHIPSEC](https://github.com/chipsec/chipsec): framework for analyzing the
-    security of PC platforms including hardware, system firmware (BIOS/UEFI),
-    and platform components.
--   [Ghidatron](https://github.com/mandiant/Ghidrathon): The FLARE team's open-source extension to add Python 3 scripting to Ghidra.
+## 🔍 Debugging & Reverse Engineering
 
-### Fuzzing
+### Disassemblers & Decompilers
+-   [Capstone](http://www.capstone-engine.org/): Lightweight multi-platform disassembly framework
+-   [Keystone](http://www.keystone-engine.org): Lightweight multi-platform assembler framework
+-   [diStorm](https://github.com/gdabah/distorm): Disassembler library for AMD64
+-   [pydasm](https://github.com/jtpereyda/libdasm/tree/master/pydasm): Python interface to libdasm x86 disassembling library
 
--   [afl-python](http://jwilk.net/software/python-afl): enables American fuzzy
-    lop fork server and instrumentation for pure-Python code
--   [Sulley](https://github.com/OpenRCE/sulley): fuzzer development and
-    fuzz testing framework consisting of multiple extensible components
--   [Peach Fuzzing Platform](https://github.com/MozillaSecurity/peach/):
-    extensible fuzzing framework for generation and mutation based
-    fuzzing (v2 was written in Python)
--   [untidy](https://github.com/kbandla/python-untidy/): general purpose XML fuzzer
--   [Powerfuzzer](http://www.powerfuzzer.com/): highly automated and
-    fully customizable web fuzzer (HTTP protocol based application
-    fuzzer)
--   [Construct](http://construct.readthedocs.org/): library for parsing
-    and building of data structures (binary or textual). Define your
-    data structures in a declarative manner
--   [Fusil](http://fusil.readthedocs.org/): Python library
-    used to write fuzzing programs
+### Dynamic Analysis & Instrumentation
+-   [Frida](http://www.frida.re/): Dynamic instrumentation framework
+-   [Unicorn Engine](https://www.unicorn-engine.org/): CPU emulator framework
+-   [PyEMU](https://github.com/codypierce/pyemu/): Fully scriptable IA-32 emulator
 
-### Web
+### Platform-Specific Tools
+-   [Androguard](https://github.com/androguard/androguard): Reverse engineering and analysis of Android applications
+-   [IDAPython](https://github.com/idapython/src): IDA Pro Python integration plugin
+-   [Ghidrathon](https://github.com/mandiant/Ghidrathon): Python 3 scripting extension for Ghidra
+-   [CHIPSEC](https://github.com/chipsec/chipsec): Platform security analysis framework
 
+### Debugging Frameworks
+-   [Paimei](https://github.com/OpenRCE/paimei): Reverse engineering framework with PyDBG, PIDA, pGRAPH
+-   [python-ptrace](http://python-ptrace.readthedocs.org/): Debugger using ptrace
+-   [PyDbgEng](http://pydbgeng.sourceforge.net/): Python wrapper for Microsoft Windows Debugging Engine
+
+### Binary Analysis
+-   [pefile](https://github.com/erocarrera/pefile): Read and work with Portable Executable files
+-   [PyBFD](https://github.com/Groundworkstech/pybfd/): Python interface to GNU Binary File Descriptor library
+
+## 🎲 Fuzzing Tools
+
+-   [afl-python](http://jwilk.net/software/python-afl): American fuzzy lop support for pure-Python code
+-   [Sulley](https://github.com/OpenRCE/sulley): Fuzzer development and fuzz testing framework
+-   [Peach Fuzzing Platform](https://github.com/MozillaSecurity/peach/): Extensible fuzzing framework
+-   [untidy](https://github.com/kbandla/python-untidy/): General purpose XML fuzzer
+-   [Powerfuzzer](http://www.powerfuzzer.com/): Highly automated web fuzzer
+-   [Construct](http://construct.readthedocs.org/): Library for parsing and building data structures
+-   [Fusil](http://fusil.readthedocs.org/): Python library for writing fuzzing programs
+
+## 🌐 Web Application Testing
+
+### HTTP Clients & Testing
 -   [XSStrike](https://github.com/s0md3v/XSStrike): Advanced XSS detection suite
--   [Requests](https://requests.readthedocs.io/): elegant and simple HTTP
-    library, built for human beings
--   [lxml](http://lxml.de/index.html): easy-to-use library for processing XML and HTML; similar to Requests
--   [HTTPie](http://httpie.org): human-friendly cURL-like command line
-    HTTP client
--   [Twill](https://twill-tools.github.io/twill/): browse the Web from a command-line
-    interface. Supports automated Web testing
--   [FunkLoad](https://github.com/nuxeo/FunkLoad): functional and load web
-    tester
--   [spynner](https://github.com/makinacorpus/spynner): Programmatic web
-    browsing module for Python with Javascript/AJAX support
--   [mitmproxy](http://mitmproxy.org/): SSL-capable, intercepting HTTP
-    proxy. Console interface allows traffic flows to be inspected and
-    edited on the fly
--   [spidy](https://github.com/rivermont/spidy/): simple command-line web crawler with page downloading and word scraping
--   [https://github.com/TrixSec/waymap](Waymap): web vulnerability scanner built for penetration testers
+-   [Requests](https://requests.readthedocs.io/): Elegant and simple HTTP library
+-   [lxml](http://lxml.de/index.html): Easy-to-use library for processing XML and HTML
+-   [HTTPie](http://httpie.org): Human-friendly cURL-like command line HTTP client
+-   [Twill](https://twill-tools.github.io/twill/): Command-line web browsing with automated testing support
 
+### Web Testing & Automation
+-   [FunkLoad](https://github.com/nuxeo/FunkLoad): Functional and load web tester
+-   [spynner](https://github.com/makinacorpus/spynner): Programmatic web browsing with Javascript/AJAX support
+-   [mitmproxy](http://mitmproxy.org/): SSL-capable intercepting HTTP proxy
+-   [spidy](https://github.com/rivermont/spidy/): Simple command-line web crawler
+-   [Waymap](https://github.com/TrixSec/waymap): Web vulnerability scanner for penetration testers
 
-### Forensics
+## 🔬 Forensics & Memory Analysis
 
--   [Volatility](http://www.volatilityfoundation.org/):
-    extract digital artifacts from volatile memory (RAM) samples
--   [Rekall](https://github.com/google/rekall):
-    memory analysis framework developed by Google
--   [TrIDLib](http://mark0.net/code-tridlib-e.html), identify file types
-    from their binary signatures. Now includes Python binding
+-   [Volatility](http://www.volatilityfoundation.org/): Extract digital artifacts from volatile memory (RAM)
+-   [Rekall](https://github.com/google/rekall): Memory analysis framework by Google
+-   [TrIDLib](http://mark0.net/code-tridlib-e.html): Identify file types from binary signatures
 
-### Malware analysis
+## 🦠 Malware Analysis
 
--   [pyew](https://github.com/joxeankoret/pyew): command line hexadecimal
-    editor and disassembler, mainly to analyze malware
--   [Exefilter](https://github.com/decalage2/exefilter): filter file formats
-    in e-mails, web pages or files. Detects many common file formats and
-    can remove active content
--   [jsunpack-n](https://github.com/urule99/jsunpack-n), generic
-    JavaScript unpacker: emulates browser functionality to detect
-    exploits that target browser and browser plug-in vulnerabilities
--   [yara-python](https://github.com/VirusTotal/yara-python):
-    identify and classify malware samples
--   [phoneyc](https://github.com/honeynet/phoneyc): pure Python
-    honeyclient implementation
--   [CapTipper](https://github.com/omriher/CapTipper): analyse, explore and
-    revive HTTP malicious traffic from PCAP file
+-   [pyew](https://github.com/joxeankoret/pyew): Hexadecimal editor and disassembler for malware analysis
+-   [Exefilter](https://github.com/decalage2/exefilter): Filter file formats and detect/remove active content
+-   [jsunpack-n](https://github.com/urule99/jsunpack-n): Generic JavaScript unpacker
+-   [yara-python](https://github.com/VirusTotal/yara-python): Identify and classify malware samples
+-   [phoneyc](https://github.com/honeynet/phoneyc): Pure Python honeyclient implementation
+-   [CapTipper](https://github.com/omriher/CapTipper): Analyse HTTP malicious traffic from PCAP files
 -   [Cuckoo](https://github.com/cuckoosandbox/cuckoo): Automated malware analysis system
 -   [CAPE](https://github.com/kevoreilly/CAPEv2): Malware configuration and payload extraction
 
-### PDF
+## 📄 PDF Analysis
 
--   [pdfminer.six](https://github.com/pdfminer/pdfminer.six):
-    extract text from PDF files
--   [peepdf-3](https://github.com/digitalsleuth/peepdf-3):
-    Python tool to analyse and explore PDF files to find out if they can be harmful
--   [Didier Stevens' PDF
-    tools](http://blog.didierstevens.com/programs/pdf-tools): analyse,
-    identify and create PDF files
--   [pyPDF](https://pypdf.readthedocs.io/): pure Python PDF toolkit: extract
-    info, spilt, merge, crop, encrypt, decrypt...
+-   [pdfminer.six](https://github.com/pdfminer/pdfminer.six): Extract text from PDF files
+-   [peepdf-3](https://github.com/digitalsleuth/peepdf-3): Analyse and explore PDF files for malicious content
+-   [Didier Stevens' PDF tools](http://blog.didierstevens.com/programs/pdf-tools): Analyse, identify and create PDF files
+-   [pyPDF](https://pypdf.readthedocs.io/): Pure Python PDF toolkit
 
-### Misc
+## 🔐 Security Analysis & Assessment
 
--   [Angr](https://github.com/angr/angr): Powerful binary analysis framework for vulnerability research and exploit development
+### Binary & Vulnerability Analysis
+-   [Angr](https://github.com/angr/angr): Binary analysis framework for vulnerability research and exploit development
 -   [ScoutSuite](https://github.com/nccgroup/ScoutSuite): Multi-cloud security auditing tool
--   [Exomind](https://github.com/jio-gl/exomind):
-    framework for building decorated graphs and developing open-source
-    intelligence modules and ideas, centered on social network services,
-    search engines and instant messaging
--   [simplejson](https://github.com/simplejson/simplejson/): JSON
-    encoder/decoder, e.g. to use [Google's AJAX
-    API](http://dcortesi.com/2008/05/28/google-ajax-search-api-example-python-code/)
--   [PyMangle](http://code.google.com/p/pymangle/): command line tool
-    and a python library used to create word lists for use with other
-    penetration testing tools
--   [Hachoir](https://hachoir.readthedocs.io/en/latest/): view and
-    edit a binary stream field by field 
--   [py-mangle](http://code.google.com/p/pymangle/): command line tool
-    and a python library used to create word lists for use with other
-    penetration testing tools
--   [wmiexec.py](https://github.com/CoreSecurity/impacket/blob/master/examples/wmiexec.py):
-    execute Powershell commands quickly and easily via WMI
--   [Pentestly](https://github.com/praetorian-inc/pentestly):
-    Python and Powershell internal penetration testing framework
--   [hacklib](https://github.com/leonli96/python-hacklib):
-    Toolkit for hacking enthusiasts: word mangling, password guessing,
-    reverse shell and other simple tools
--   [Certipy](https://github.com/ly4k/Certipy): Active Directory Certificate Services enumeration and abuse tool
--   [BloodHound.py](https://github.com/fox-it/BloodHound.py): Python-based BloodHound ingestor for Active Directory security assessment
 
+### Active Directory & Windows
+-   [Certipy](https://github.com/ly4k/Certipy): Active Directory Certificate Services enumeration and abuse
+-   [BloodHound.py](https://github.com/fox-it/BloodHound.py): Python-based BloodHound ingestor for AD security assessment
+-   [wmiexec.py](https://github.com/CoreSecurity/impacket/blob/master/examples/wmiexec.py): Execute Powershell commands via WMI
 
-### Other useful libraries and tools
+### General Security Tools
+-   [Pentestly](https://github.com/praetorian-inc/pentestly): Python and Powershell penetration testing framework
+-   [hacklib](https://github.com/leonli96/python-hacklib): Toolkit for hacking enthusiasts
 
--   [Project Jupyter](https://jupyter.org): enhanced interactive 
-    shell with many features for object introspection, system shell
-    access, and its own special command system
--   [Beautiful Soup](http://www.crummy.com/software/BeautifulSoup/):
-    HTML parser optimized for screen-scraping
--   [matplotlib](https://matplotlib.org): make 2D plots of
-    arrays
--   [Mayavi](http://code.enthought.com/projects/mayavi/): 3D scientific
-    data visualization and plotting
--   [RTGraph3D](http://www.secdev.org/projects/rtgraph3d/): create
-    dynamic graphs in 3D
--   [Twisted](http://twistedmatrix.com/): event-driven networking engine
--   [Suds](https://github.com/suds-community/suds): lightweight SOAP client for
-    consuming Web Services
--   [NetworkX](https://networkx.org): graph library (edges, nodes)
--   [Pandas](http://pandas.pydata.org/): library providing
-    high-performance, easy-to-use data structures and data analysis
-    tools
--   [pyparsing](https://pypi.org/project/pyparsing/): general parsing
-    module
--   [lxml](http://lxml.de/): most feature-rich and easy-to-use library
-    for working with XML and HTML in the Python language
--   [Whoosh](https://github.com/whoosh-community/whoosh): fast, featureful
-    full-text indexing and searching library implemented in pure Python
--   [Pexpect](https://github.com/pexpect/pexpect): control and automate
-    other programs, similar to Don Libes \`Expect\` system
--   [SikuliX](https://sikulix.github.io/docs/scripts/python/), visual technology
-    to search and automate GUIs using screenshots. Scriptable in
--   [PyQt](http://www.riverbankcomputing.co.uk/software/pyqt) and
-    [PySide](http://www.pyside.org/): Python bindings for the Qt
-    application framework and GUI library
+### OSINT & Intelligence
+-   [Exomind](https://github.com/jio-gl/exomind): Framework for building decorated graphs and OSINT modules
+
+## 🛠️ Utility Libraries
+
+### Interactive & Visualization
+-   [Project Jupyter](https://jupyter.org): Enhanced interactive shell
+-   [matplotlib](https://matplotlib.org): 2D plotting of arrays
+-   [Mayavi](http://code.enthought.com/projects/mayavi/): 3D scientific data visualization
+-   [RTGraph3D](http://www.secdev.org/projects/rtgraph3d/): Dynamic 3D graphs
+
+### Data Processing & Analysis
+-   [Beautiful Soup](http://www.crummy.com/software/BeautifulSoup/): HTML parser optimized for screen-scraping
+-   [Pandas](http://pandas.pydata.org/): High-performance data structures and analysis tools
+-   [NetworkX](https://networkx.org): Graph library for edges and nodes
+-   [Whoosh](https://github.com/whoosh-community/whoosh): Full-text indexing and searching library
+
+### Networking & Communication
+-   [Twisted](http://twistedmatrix.com/): Event-driven networking engine
+-   [Suds](https://github.com/suds-community/suds): Lightweight SOAP client
+
+### Parsing & Processing
+-   [simplejson](https://github.com/simplejson/simplejson/): JSON encoder/decoder
+-   [pyparsing](https://pypi.org/project/pyparsing/): General parsing module
+-   [lxml](http://lxml.de/): Feature-rich library for XML and HTML
+-   [Hachoir](https://hachoir.readthedocs.io/en/latest/): View and edit binary stream field by field
+
+### Automation & Control
+-   [Pexpect](https://github.com/pexpect/pexpect): Control and automate other programs
+-   [SikuliX](https://sikulix.github.io/docs/scripts/python/): Visual technology to search and automate GUIs
+-   [PyQt](http://www.riverbankcomputing.co.uk/software/pyqt) and [PySide](http://www.pyside.org/): Python bindings for Qt framework
+
+### Wordlist & Password Tools
+-   [PyMangle](http://code.google.com/p/pymangle/) / [py-mangle](http://code.google.com/p/pymangle/): Create word lists for penetration testing
+
+---

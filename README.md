@@ -52,44 +52,115 @@ This repository contains tools and scripts sourced from various GitHub repositor
 
 # Table of Content
 
-### Python Networking
+## 🔴 1. Password Attacks & Credential Attacks
+- [Password Hash Cracking (`hashlib` / hashcat integration)](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Password%20Attacks/Password%20Hash%20Cracking.md)
+- LDAP Brute Force
+- SSH Brute Force with Paramiko
+- FTP Brute Force
+- SMB Brute Force (`impacket`)
 
+## 🌐 2. Python Networking
+
+### Basic Network Clients & Servers
 - [TCP Client](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Networking/TCP%20Client.md)
 - [UDP Client](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Networking/UDP%20Client.md)
 - [TCP Server](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Networking/TCP%20Server.md)
 - [Netcat Client & Server for Remote code execution](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Networking/Netcat%20Client%20%26%20Server.md)
 - [TCP Proxy](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Networking/TCP%20Proxy.md)
+
+### SSH Tools
 - [SSH with Paramiko](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Networking/SSH%20with%20Paramiko.py)
 - [Basic SSH server using the paramiko](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Networking/Basic%20SSH%20server%20using%20the%20paramiko.md)
 - [SSH reverse tunneling](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Networking/SSH%20reverse%20tunneling.md)
 - [Simple SSH server](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Networking/bhp_reverse_ssh_cmd.md)
+
+### Packet Sniffers & Network Analysis
 - [Packet Sniffer Using raw sockets](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Networking/packet%20sniffer%20using%20raw%20sockets.md)
 - [Packet Sniffer Decoding Header](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Networking/Packet%20Sniffer%20Decoding%20Header.md)
 - [Packet Sniffer Decoding ICMP](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Networking/Packet%20Sniffer%20Decoding%20ICMP.md)
 - [Python Subnet Scanner with ICMP Packet Analysis](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Networking/Python%20Subnet%20Scanner%20with%20ICMP%20Packet%20Analysis.md)
 - [Email Credential Sniffer in Python](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Networking/Email%20Credential%20Sniffer%20in%20Python.md)
+
+### Scapy-Based Attacks
 - [ARP Cache Poisoning with Scapy](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Networking/ARP%20Cache%20Poisoning%20with%20Scapy.md)
 - [PCAP Image Extractor & Face Detector](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Networking/PCAP%20Image%20Extractor%20%26%20Face%20Detector.md)
-- [Brute-force HTTP authentication scan](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/HTTP/brute-force%20HTTP%20authentication%20scan.md)
+
+### Port Scanning & Host Discovery
 - [Check Open and Closed Ports on a Remote Host](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/HTTP/Check%20Open%20and%20Closed%20Ports%20on%20a%20Remote%20Host.md)
 - [Multithreaded TCP Port Scanning](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/HTTP/Multithreaded%20TCP%20Port%20Scanning.md)
 - [Scanning a Range of Ports on a Remote Host](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/HTTP/Scanning%20a%20Range%20of%20Ports%20on%20a%20Remote%20Host.md)
 - [Test a Socket Connection to a Remote Host](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/HTTP/Test%20a%20Socket%20Connection%20to%20a%20Remote%20Host.md)
 - [Resolve Host Name from an IP Address](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/HTTP/Resolve%20Host%20Name%20from%20an%20IP%20Address.md)
-### Web Hacking
+
+### Advanced Scapy Usage
+- TCP SYN Scan with Scapy
+- OS Fingerprinting
+- Custom Protocol Crafting
+- Network Traceroute with Scapy
+
+## 🔥 3. Network Attacks
+- DNS Spoofing / DNS Poisoning
+- DHCP Starvation Attack
+- SYN Flood / DoS Scripts
+- VLAN Hopping
+- ICMP Tunneling
+- SSL/TLS Stripping
+- 802.11 Wi-Fi Deauth Attack (Scapy)
+- WPA Handshake Capture
+
+## 🕷️ 4. Web Application Hacking
+
+### Web Path Discovery & Crawling
 - [Web Path Scanner (Joomla Site Crawler)](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Networking/Web%20Path%20Scanner%20(Joomla%20Site%20Crawler).md)
 - [Directory & File Bruteforcer](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Networking/Directory%20%26%20File%20Bruteforcer.md)
+
+### Brute Force Attacks
+- [Brute-force HTTP authentication scan](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/HTTP/brute-force%20HTTP%20authentication%20scan.md)
 - [Multi-threaded Brute-Force Login Script](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Networking/Multi-threaded%20Brute-Force%20Login%20Script.md)
 - [multi-threaded brute-force attack on a WordPress login page](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Networking/multi-threaded%20brute-force%20attack%20on%20a%20WordPress%20login%20page.md)
 
-### Burp Fuzzing
+### Web Vulnerability Testing
+- SQL Injection Detection & Exploitation
+- XSS Payload Injection Tester (Reflected / Stored / DOM)
+- CSRF Token Bypass
+- XXE Injection Tester
+- SSRF Detection Script
+- LFI / RFI Scanner
+- JWT Token Manipulation
+- CORS Misconfiguration Scanner
+- GraphQL Enumeration & Fuzzing
+- Cookie Manipulation / Session Hijacking
+- HTTP Request Smuggling
+- OAuth Attack Scripts
+
+### Web Scraping & Reconnaissance
+- Web Scraper / Crawler for Recon (BeautifulSoup / Selenium)
+- REST API Fuzzer
+
+## 🔧 5. Burp Suite Extensions & Fuzzing
+
+### Burp Fuzzing Tools
 - [Burp Suite Intruder Payload Generator (Python Extension)](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/BHP%20Fuzzer/Burp%20Suite%20Intruder%20Payload%20Generator%20(Python%20Extension).md)
 - [Burp Suite Extension: BHP Wordlist (Bing Search Integration)](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/BHP%20Fuzzer/Burp%20Suite%20Extension%3A%20BHP%20Wordlist%20(Bing%20Search%20Integration).md)
 - [Burp Suite Extension: BHP Wordlist Generator](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/BHP%20Fuzzer/Burp%20Suite%20Extension%3A%20BHP%20Wordlist%20Generator.md)
 
-### Github Command and Control
-- [GitHub-based trojan](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Github%20Command%20and%20Control/GitHub-based%20trojan.md)
+## 🎯 6. Reconnaissance & OSINT
+- WHOIS Lookup Automation
+- DNS Enumeration (Subdomains)
+- Google Dorking Automation
+- Shodan API Integration
+- Email Harvesting (`theHarvester`-style)
+- Banner Grabbing
+- SNMP Enumeration
+- SMB Enumeration (`impacket`)
+- NetBIOS / LLMNR Poisoning
+- EXIF Metadata Extraction from Images/Docs
+- Username / Social Media Enumeration
 
+## 🦠 7. Trojaning & Malware Development
+
+### GitHub Command and Control
+- [GitHub-based trojan](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Github%20Command%20and%20Control/GitHub-based%20trojan.md)
 
 ### Trojaning Tasks on Windows
 - [keylogger](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Trojaning%20Tasks%20on%20Windows/keylogger.md)
@@ -100,20 +171,98 @@ This repository contains tools and scripts sourced from various GitHub repositor
 - [Monitor specific directories](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Trojaning%20Tasks%20on%20Windows/monitor%20specific%20directories.md)
 - [Code Injection](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Trojaning%20Tasks%20on%20Windows/Code%20Injection.md)
 
-### Browser Attacks
+## 🌐 8. Browser Attacks
 - [Browser Hijacking and Login Redirect](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Browser%20Attacks/Browser%20Hijacking%20and%20Login%20Redirect.md)
 - [Simple HTTP Server for Capturing Credentials](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Browser%20Attacks/Simple%20HTTP%20Server%20for%20Capturing%20Credentials.md)
 - [Document Exfiltration Using Tumblr](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Browser%20Attacks/Document%20Exfiltration%20Using%20Tumblr.md)
 - [Generates a new RSA key pair with a 2048-bit key length](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Browser%20Attacks/generates%20a%20new%20RSA%20key%20pair%20with%20a%202048-bit%20key%20length.md)
 - [Decrypts and decompresses the encrypted data](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Browser%20Attacks/decrypts%20and%20decompresses%20the%20encrypted%20data.md)
-  
-### Forensics
+
+## 🚀 9. Post-Exploitation & Privilege Escalation
+
+### Shells & Backdoors
+- Reverse Shell Generator (TCP / HTTP / HTTPS)
+- Bind Shell
+- Meterpreter-Style Python Backdoor
+
+### Windows Post-Exploitation
+- Windows Registry Manipulation
+- Token Impersonation (Windows)
+- Password Dumping from Memory
+- Pass-the-Hash Attack (`impacket`)
+- Mimikatz Integration / Credential Dumping
+
+### Linux Post-Exploitation
+- Linux SUID / GUID Enumeration
+- Cron Job Abuse Detection
+
+### Persistence & Exfiltration
+- Persistence via Startup Scripts / Cron / Registry
+- Data Exfiltration over DNS / ICMP / Covert Channels
+
+## 🏰 10. Active Directory Attacks
+- Kerberoasting
+- Pass-the-Ticket
+- LDAP Enumeration (`ldap3`)
+- BloodHound Data Collection (`BloodHound.py`)
+- SMB Share Enumeration (`SMBMap`)
+
+## 🥷 11. Evasion & Anti-Forensics
+- Payload Obfuscation
+- Process Hollowing
+- DLL Injection (Windows)
+- Log Clearing / Tampering
+- File Timestomping
+- Polymorphic Shellcode
+- Base64 / XOR Payload Encoding
+
+## 🎮 12. C2 (Command & Control)
+- DNS-Based C2 Channel
+- HTTP / HTTPS C2 Beacon
+- Slack / Discord C2
+- Encrypted C2 with AES
+- Heartbeat / Persistence Mechanism
+
+## 🔍 13. Vulnerability Scanning & Exploitation
+
+### Scanning & Fingerprinting
+- CVE Scanner / Vulnerability Checker
+- Service Version Fingerprinting
+- Nmap Python Wrapper (`python-nmap`)
+
+### Exploit Development
+- Exploit Development — Buffer Overflow
+- Format String Vulnerability Tester
+- Custom Fuzzing Framework (TCP / UDP / File / API)
+- ROP Chain Generation
+- Buffer Overflow Pattern Generator (like `pattern_create`)
+- Shellcode Encoder / Decoder
+- Bad Character Finder
+
+## 🔐 14. Cryptography Attacks
+- Padding Oracle Attack
+- ECB Mode Detection
+- Frequency Analysis (Classic Ciphers)
+- Weak TLS / SSL Detection
+- S/MIME & PGP Key Extraction
+- Password Hash Identifier
+- AES / XOR Custom Encryption & Decryption
+
+## 🎣 15. Phishing Tools
+- Phishing Email Generator
+- Clone Website for Credential Harvesting
+- URL Obfuscation Techniques
+
+## 🔬 16. Forensics & Memory Analysis
 - [Extract password hashes from a Windows memory dump using Volatility 3](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Forensics/extract%20password%20hashes%20from%20a%20Windows%20memory%20dump%20using%20Volatility%203.md)
 - [Redirect execution to the injected shellcode](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Forensics/redirect%20execution%20to%20the%20injected%20shellcode.md)
 - [Immunity Debugger](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Forensics/Immunity%20Debugger.md)
 
-### Password Attacks & Credential Attacks
-- [Password Hash Cracking (`hashlib` / hashcat integration)](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Password%20Attacks/Password%20Hash%20Cracking.md)
+## ☁️ 17. Container & Cloud Security
+- Docker Escape Techniques
+- AWS / Azure / GCP Misconfiguration Scanners
+- S3 Bucket Enumeration
+
 
 ### Automating Administrative Task
 

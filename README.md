@@ -112,6 +112,9 @@ This repository contains tools and scripts sourced from various GitHub repositor
 - [Redirect execution to the injected shellcode](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Forensics/redirect%20execution%20to%20the%20injected%20shellcode.md)
 - [Immunity Debugger](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Forensics/Immunity%20Debugger.md)
 
+### Password Attacks & Credential Attacks
+- [Password Hash Cracking (`hashlib` / hashcat integration)](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Password%20Attacks/Password%20Hash%20Cracking.md)
+
 ### Automating Administrative Task
 
 - [Accept input from a file.](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Automating%20Regular%20Administrative%20Activities/accept_by_input_file.md)

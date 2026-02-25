@@ -145,7 +145,7 @@ This repository contains tools and scripts sourced from various GitHub repositor
 ## 🎯 6. Reconnaissance & OSINT
 - [WHOIS Lookup Automation](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Reconnaissance%20%26%20OSINT/WHOIS%20Lookup.md)
 - [DNS Enumeration (Subdomains)](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Reconnaissance%20%26%20OSINT/DNS%20Enumeration.md)
-- Google Dorking Automation
+- [Google Dorking Automation](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Reconnaissance%20%26%20OSINT/Google%20Dorking.md)
 - Shodan API Integration
 - Email Harvesting (`theHarvester`-style)
 - Banner Grabbing

@@ -52,10 +52,10 @@ This repository contains tools and scripts sourced from various GitHub repositor
 
 ## 🔴 1. Password Attacks & Credential Attacks
 - [Password Hash Cracking (`hashlib` / hashcat integration)](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Password%20Attacks/Password%20Hash%20Cracking.md)
-- LDAP Brute Force
-- SSH Brute Force with Paramiko
-- FTP Brute Force
-- SMB Brute Force (`impacket`)
+- [LDAP Brute Force](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Password%20Attacks/LDAP%20Brute%20Force.md)
+- [SSH Brute Force with Paramiko](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Password%20Attacks/SSH%20Brute%20Force%20Tool.md)
+- [FTP Brute Force](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Password%20Attacks/FTP%20Brute%20Force%20Tool.md)
+- [SMB Brute Force (`impacket`)](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Password%20Attacks/SMB%20Brute%20Force%20Tool.md)
 
 ## 🌐 2. Python Networking
 
@@ -98,13 +98,13 @@ This repository contains tools and scripts sourced from various GitHub repositor
 
 ## 🔥 3. Network Attacks
 - DNS Spoofing / DNS Poisoning
-- DHCP Starvation Attack
-- SYN Flood / DoS Scripts
-- VLAN Hopping
-- ICMP Tunneling
-- SSL/TLS Stripping
-- 802.11 Wi-Fi Deauth Attack (Scapy)
-- WPA Handshake Capture
+- [DHCP Starvation Attack](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Network%20Attacks/DHCP%20Starvation%20Attack.md)
+- [SYN Flood / DoS Scripts](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Network%20Attacks/SYN%20Flood.md)
+- [VLAN Hopping](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Network%20Attacks/VLAN%20Hopping%20Tool.md)
+- [ICMP Tunneling](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Network%20Attacks/ICMP%20Tunneling%20Network.md)
+- [SSL/TLS Stripping](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Network%20Attacks/TLS%20Stripping.md)
+- [802.11 Wi-Fi Deauth Attack (Scapy)](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Network%20Attacks/802.11%20Wi-Fi.md)
+- [WPA Handshake Capture](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Network%20Attacks/WPA%20Handshake.md)
 
 ## 🕷️ 4. Web Application Hacking
 
@@ -143,8 +143,8 @@ This repository contains tools and scripts sourced from various GitHub repositor
 - [Burp Suite Extension: BHP Wordlist Generator](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/BHP%20Fuzzer/Burp%20Suite%20Extension%3A%20BHP%20Wordlist%20Generator.md)
 
 ## 🎯 6. Reconnaissance & OSINT
-- WHOIS Lookup Automation
-- DNS Enumeration (Subdomains)
+- [WHOIS Lookup Automation](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Reconnaissance%20%26%20OSINT/WHOIS%20Lookup.md)
+- [DNS Enumeration (Subdomains)](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Reconnaissance%20%26%20OSINT/DNS%20Enumeration.md)
 - Google Dorking Automation
 - Shodan API Integration
 - Email Harvesting (`theHarvester`-style)

@@ -1,3 +1,6 @@
+# Python FTP Brute Force Tool
+
+```python
 #!/usr/bin/env python3
 """
 FTP Brute Force Tool
@@ -849,3 +852,212 @@ Examples:
 
 if __name__ == "__main__":
     main()
+```
+
+# Script Explanation
+
+## Overview
+This is a comprehensive FTP brute force testing tool built with Python's built-in `ftplib` library. It supports standard FTP, FTPS (FTP over TLS), multiple attack modes, and provides extensive logging and reporting capabilities for authorized security testing.
+
+## Key Features
+
+1. **Multiple FTP Protocols**:
+   - Standard FTP (port 21)
+   - FTPS (FTP over TLS/SSL)
+   - Passive and active mode support
+
+2. **Attack Modes**:
+   - Standard brute force (multiple users + multiple passwords)
+   - Dictionary attack (single user + password list)
+   - Username enumeration (multiple users + single password)
+   - Anonymous access testing
+
+3. **Advanced Capabilities**:
+   - Multi-threading support
+   - Banner grabbing
+   - System information retrieval after successful login
+   - Common credentials generation
+   - Progress tracking with real-time statistics
+
+4. **Intelligent Features**:
+   - Automatic FTP response code handling
+   - Connection timeout management
+   - Directory listing verification
+   - Result logging and export
+
+## Script Structure
+
+### Class: `FTPBruteForcer`
+The main class handling all FTP operations:
+
+- **`__init__()`**: Initializes connection parameters and validates target
+- **`test_anonymous_access()`**: Checks if anonymous FTP is enabled
+- **`test_connection()`**: Tests individual credential pairs with proper error handling
+- **`get_system_info()`**: Retrieves system details after successful login
+- **`worker()`**: Thread worker for concurrent credential testing
+- **`brute_force()`**: Main attack orchestrator with queue management
+- **`dictionary_attack()`**: Single username dictionary attack
+- **`username_enumeration()`**: Username brute force with single password
+- **`generate_common_credentials()`**: Creates common FTP username/password pairs
+- **`save_results()`**: Exports found credentials to file
+
+## Installation
+
+### Dependencies
+```bash
+# No external dependencies required for basic functionality!
+# Python 3.6+ is sufficient with built-in ftplib
+
+# Optional - for colored output
+pip install colorama
+
+# For enhanced functionality (optional)
+pip install concurrent-futures  # Usually built-in for Python 3.2+
+```
+
+### Platform-Specific Notes
+- **Linux/Mac**: Works out of the box
+- **Windows**: May need to configure firewall for active mode FTP
+
+## Usage Examples
+
+### Basic Dictionary Attack
+```bash
+# Single username with password list
+python ftp_bruteforce.py 192.168.1.100 -u admin -P passwords.txt
+
+# With custom port
+python ftp_bruteforce.py 192.168.1.100 -p 2121 -u admin -P passwords.txt
+```
+
+### Multi-User Attacks
+```bash
+# Multiple usernames and passwords
+python ftp_bruteforce.py 192.168.1.100 -U users.txt -P passwords.txt -t 10
+
+# Using comma-separated lists
+python ftp_bruteforce.py 192.168.1.100 -U "admin,ftp,user" -P "password,123456,ftp"
+```
+
+### Anonymous Access Testing
+```bash
+# Test anonymous FTP access
+python ftp_bruteforce.py 192.168.1.100 --anonymous
+
+# Anonymous access with system info
+python ftp_bruteforce.py 192.168.1.100 --anonymous --info
+```
+
+### FTPS (FTP over TLS)
+```bash
+# FTPS attack
+python ftp_bruteforce.py 192.168.1.100 --tls -u admin -P passwords.txt
+
+# FTPS with custom port (usually 990 for implicit FTPS)
+python ftp_bruteforce.py 192.168.1.100 --tls -p 990 -u admin -P passwords.txt
+```
+
+### Username Enumeration
+```bash
+# Find valid usernames with common password
+python ftp_bruteforce.py 192.168.1.100 --enum-users users.txt -p "ftp123"
+```
+
+### Advanced Attacks
+```bash
+# Common credentials attack
+python ftp_bruteforce.py 192.168.1.100 --common -t 8
+
+# Full attack with system info and results
+python ftp_bruteforce.py 192.168.1.100 -U users.txt -P passwords.txt -t 20 -v --info -o results.txt
+
+# Active mode FTP (if passive doesn't work)
+python ftp_bruteforce.py 192.168.1.100 -u admin -P passwords.txt --active
+```
+
+## FTP Response Codes
+
+The tool handles various FTP response codes:
+
+| Code | Meaning | Handling |
+|------|---------|----------|
+| 220 | Service ready | Success |
+| 230 | User logged in | Success |
+| 331 | Password required | Continue |
+| 430 | Invalid credentials | Failure |
+| 530 | Not logged in | Failure |
+| 550 | File unavailable | Partial success |
+
+## Security Considerations
+
+⚠️ **IMPORTANT LEGAL AND ETHICAL NOTES:**
+
+1. **Authorization Required**: This tool is for authorized penetration testing only. Unauthorized access attempts may violate computer fraud laws.
+
+2. **Rate Limiting**: The tool includes configurable delays to avoid overwhelming target servers.
+
+3. **Logging**: All attempts are logged - maintain these logs for authorization verification.
+
+4. **Responsible Use**: Only test systems you own or have written permission to test.
+
+## How It Works
+
+### Authentication Process
+The tool uses Python's `ftplib` for FTP operations:
+1. Establishes TCP connection to FTP port
+2. For FTPS, performs TLS handshake
+3. Sends USER and PASS commands
+4. Verifies success by checking response codes
+5. Optionally attempts directory listing for verification
+6. Properly closes connections
+
+### Threading Model
+- Uses producer-consumer pattern with Queue
+- Each worker thread tests credentials independently
+- Main thread monitors progress and collects results
+- Thread count adjustable based on target capacity
+
+### Error Handling
+Comprehensive error handling covers:
+- Authentication failures (530, 430 codes)
+- Temporary errors (4xx codes)
+- Network timeouts and connection issues
+- Protocol-specific exceptions
+
+## Performance Optimization
+
+- **Thread Count**: Start with 5-10 threads, adjust based on server capacity
+- **Timeout Settings**: Default 10 seconds, increase for slow connections
+- **Passive Mode**: Usually more reliable through firewalls
+- **Stop on Success**: Enable to save time once credentials are found
+
+## Mitigation Recommendations
+
+For FTP server administrators:
+
+1. **Disable Anonymous FTP**: Unless specifically required
+2. **Use FTPS/SSH**: Encrypt FTP traffic with TLS/SSL
+3. **Strong Password Policies**: Enforce complex passwords
+4. **Implement Rate Limiting**: Use tools like fail2ban
+5. **Monitor Logs**: Regularly check for brute force attempts
+6. **Use Non-Standard Ports**: Change from default port 21
+7. **Account Lockout**: Implement after multiple failed attempts
+
+## Troubleshooting
+
+| Issue | Solution |
+|-------|----------|
+| Connection refused | Check port and firewall settings |
+| Timeout errors | Increase timeout value with `--timeout` |
+| Passive mode fails | Try active mode with `--active` |
+| FTPS errors | Ensure TLS is properly configured on server |
+| Slow performance | Reduce thread count or increase delays |
+| Directory listing fails | May still have valid login - check response code |
+
+## Limitations
+
+- No support for SFTP (SSH File Transfer Protocol)
+- Basic FTPS support (implicit/explicit TLS)
+- No distributed attack capability
+- Limited to FTP protocol only
+- Directory listing may fail on some servers

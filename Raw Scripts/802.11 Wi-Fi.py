@@ -166,7 +166,7 @@ class WiFiDeauthAttack:
                     interface = line.split()[0]
                     self.logger.info(f"[+] Found wireless interface: {interface}")
                     return interface
-        except:
+        except Exception:
             pass
         
         # Default fallback
@@ -179,7 +179,7 @@ class WiFiDeauthAttack:
             if 'Mode:Monitor' not in result.stdout and 'Monitor' not in result.stdout:
                 self.logger.warning(f"[!] Interface {self.interface} may not be in monitor mode")
                 self.logger.warning("    Set monitor mode with: sudo airmon-ng start " + self.interface)
-        except:
+        except Exception:
             self.logger.warning(f"[!] Could not verify interface mode")
     
     def set_channel(self, channel: int):
@@ -223,7 +223,7 @@ class WiFiDeauthAttack:
                         try:
                             stats = packet[Dot11Beacon].network_stats()
                             channel = stats.get('channel', 0)
-                        except:
+                        except Exception:
                             channel = 0
                         
                         self.networks[bssid] = {
@@ -556,7 +556,7 @@ class WiFiScanner:
                     try:
                         stats = packet[Dot11Beacon].network_stats()
                         channel = stats.get('channel', 0)
-                    except:
+                    except Exception:
                         channel = 0
                     
                     self.networks[bssid] = {

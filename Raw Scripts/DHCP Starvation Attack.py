@@ -180,13 +180,13 @@ class DHCPStarvationAttack:
             try:
                 gateway = netifaces.gateways()['default'][netifaces.AF_INET]
                 return gateway[1]
-            except:
+            except Exception:
                 pass
         
         # Fallback to scapy
         try:
             return conf.iface
-        except:
+        except Exception:
             return 'eth0'
     
     def validate_network(self):

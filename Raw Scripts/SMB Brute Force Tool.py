@@ -239,7 +239,7 @@ class SMBBruteForcer:
                 # Try to negotiate SMB3
                 try:
                     conn.setDialect(SMB3_DIALECT_0300)
-                except:
+                except Exception:
                     conn.setDialect(SMB3_DIALECT_021)
             else:  # SMB2 default
                 conn = SMBConnection(self.target, self.target, timeout=self.timeout)
@@ -304,7 +304,7 @@ class SMBBruteForcer:
             if conn:
                 try:
                     conn.logoff()
-                except:
+                except Exception:
                     pass
     
     def enumerate_shares(self, username: str, password: str, 
@@ -339,7 +339,7 @@ class SMBBruteForcer:
             if success:
                 self.logger.warning("[!] Null session allowed! This is a security risk")
                 return True
-        except:
+        except Exception:
             pass
         
         return False

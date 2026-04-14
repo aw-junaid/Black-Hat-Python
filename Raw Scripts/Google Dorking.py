@@ -745,7 +745,7 @@ class GoogleDorker:
                 from urllib.parse import urlparse
                 domain = urlparse(r['url']).netloc
                 analysis['unique_domains'].add(domain)
-            except:
+            except Exception:
                 pass
             
             # Count by category
@@ -768,7 +768,7 @@ class GoogleDorker:
                 from urllib.parse import urlparse
                 domain = urlparse(r['url']).netloc
                 domain_counts[domain] += 1
-            except:
+            except Exception:
                 pass
         
         analysis['top_domains'] = sorted(

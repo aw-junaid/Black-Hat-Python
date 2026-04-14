@@ -163,7 +163,7 @@ class FTPBruteForcer:
             banner = sock.recv(1024).decode('utf-8', errors='ignore').strip()
             sock.close()
             return banner
-        except:
+        except Exception:
             return None
     
     def test_anonymous_access(self) -> bool:
@@ -231,7 +231,7 @@ class FTPBruteForcer:
             try:
                 files = ftp.nlst()
                 list_success = True
-            except:
+            except Exception:
                 list_success = False
             
             ftp.quit()
@@ -263,7 +263,7 @@ class FTPBruteForcer:
             if ftp:
                 try:
                     ftp.close()
-                except:
+                except Exception:
                     pass
     
     def get_system_info(self, username: str, password: str) -> Dict:
@@ -296,20 +296,20 @@ class FTPBruteForcer:
             # Get system type
             try:
                 info['system'] = ftp.sendcmd('SYST')
-            except:
+            except Exception:
                 info['system'] = 'Unknown'
             
             # Get current directory
             try:
                 info['pwd'] = ftp.pwd()
-            except:
+            except Exception:
                 info['pwd'] = 'Unknown'
             
             # Get features
             try:
                 features = ftp.sendcmd('FEAT')
                 info['features'] = features.split('\n')
-            except:
+            except Exception:
                 info['features'] = []
             
             # Get directory listing
@@ -317,7 +317,7 @@ class FTPBruteForcer:
                 files = []
                 ftp.dir(lambda x: files.append(x))
                 info['files'] = files[:10]  # First 10 files
-            except:
+            except Exception:
                 info['files'] = []
             
             ftp.quit()
@@ -328,7 +328,7 @@ class FTPBruteForcer:
             if ftp:
                 try:
                     ftp.close()
-                except:
+                except Exception:
                     pass
         
         return info

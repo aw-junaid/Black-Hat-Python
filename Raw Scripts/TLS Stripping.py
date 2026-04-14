@@ -184,7 +184,7 @@ class SSLStripProxy:
             default = gateways.get('default', {})
             if netifaces.AF_INET in default:
                 return default[netifaces.AF_INET][1]
-        except:
+        except Exception:
             pass
         return 'eth0'
     
@@ -241,7 +241,7 @@ class SSLStripProxy:
             
             if answered:
                 return answered[0][1].hwsrc
-        except:
+        except Exception:
             pass
         return None
     

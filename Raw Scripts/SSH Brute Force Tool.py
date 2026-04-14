@@ -180,7 +180,7 @@ class SSHBruteForcer:
                     output = stdout.read().decode().strip()
                     if output == "test":
                         return True, None
-                except:
+                except Exception:
                     # Even if command fails, authentication succeeded
                     return True, "Authentication successful but command execution failed"
                 
@@ -202,7 +202,7 @@ class SSHBruteForcer:
             if client:
                 try:
                     client.close()
-                except:
+                except Exception:
                     pass
     
     def get_banner(self) -> Optional[str]:
@@ -219,7 +219,7 @@ class SSHBruteForcer:
             banner = sock.recv(1024).decode().strip()
             sock.close()
             return banner
-        except:
+        except Exception:
             return None
     
     def worker(self, task_queue: queue.Queue, results_queue: queue.Queue):
@@ -483,7 +483,7 @@ class SSHBruteForcer:
             for mutation in mutations:
                 try:
                     passwords.add(mutation(word))
-                except:
+                except Exception:
                     pass
         
         return list(passwords)

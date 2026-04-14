@@ -152,13 +152,13 @@ class VLANHopAttack:
             try:
                 gateway = netifaces.gateways()['default'][netifaces.AF_INET]
                 return gateway[1]
-            except:
+            except Exception:
                 pass
         
         # Fallback to scapy
         try:
             return conf.iface
-        except:
+        except Exception:
             return 'eth0'
     
     def get_interface_mac(self) -> str:
@@ -171,7 +171,7 @@ class VLANHopAttack:
             
             # Fallback to scapy
             return get_if_hwaddr(self.interface)
-        except:
+        except Exception:
             # Generate random MAC as last resort
             return "02:00:00:%02x:%02x:%02x" % (
                 random.randint(0, 255),
@@ -625,7 +625,7 @@ class VLANHopAttack:
             if response and response.haslayer(Dot1Q):
                 results['native_vlan'] = response[Dot1Q].vlan
                 self.logger.info(f"[+] Native VLAN detected: {results['native_vlan']}")
-        except:
+        except Exception:
             pass
         
         # Test double tagging
@@ -637,7 +637,7 @@ class VLANHopAttack:
             if response:
                 results['double_tagging'] = True
                 self.logger.info("[!] Double tagging may be possible!")
-        except:
+        except Exception:
             pass
         
         # Test switch spoofing
@@ -649,7 +649,7 @@ class VLANHopAttack:
             if response:
                 results['switch_spoofing'] = True
                 self.logger.info("[!] Switch spoofing may be possible!")
-        except:
+        except Exception:
             pass
         
         # Scan for VLANs

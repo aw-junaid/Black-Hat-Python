@@ -256,7 +256,7 @@ class SubdomainEnumerator:
                     f"[!] Wildcard DNS detected: *.{self.domain} -> {self.wildcard_ip}"
                 )
                 self.stats['wildcard'] = True
-        except:
+        except Exception:
             self.logger.info("[+] No wildcard DNS detected")
     
     def is_wildcard(self, ip: str) -> bool:
@@ -588,7 +588,7 @@ class SubdomainEnumerator:
                 if ptr.endswith(self.domain):
                     return ptr
                     
-        except:
+        except Exception:
             pass
         
         return None
@@ -863,7 +863,7 @@ class AsyncSubdomainEnumerator:
             result = await resolver.query(subdomain, 'A')
             if result:
                 return subdomain
-        except:
+        except Exception:
             pass
         return None
     

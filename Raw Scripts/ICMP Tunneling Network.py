@@ -327,7 +327,7 @@ class ICMPShell:
                 if self.encryption:
                     try:
                         payload = self.decrypt_data(payload)
-                    except:
+                    except Exception:
                         pass
                 
                 # Remove padding

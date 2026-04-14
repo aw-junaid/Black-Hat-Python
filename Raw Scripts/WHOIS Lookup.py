@@ -378,7 +378,7 @@ class WHOISLookup:
         try:
             ipaddress.ip_address(query)
             return 'ip'
-        except:
+        except Exception:
             pass
         
         # Check if it's an IP range
@@ -386,7 +386,7 @@ class WHOISLookup:
             try:
                 ipaddress.ip_network(query, strict=False)
                 return 'ip'
-            except:
+            except Exception:
                 pass
         
         # Check if it's a domain

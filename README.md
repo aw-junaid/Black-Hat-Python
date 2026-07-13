@@ -91,10 +91,12 @@ This repository contains tools and scripts sourced from various GitHub repositor
 - [Resolve Host Name from an IP Address](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/HTTP/Resolve%20Host%20Name%20from%20an%20IP%20Address.md)
 
 ### Advanced Scapy Usage
-- TCP SYN Scan with Scapy
-- OS Fingerprinting
-- Custom Protocol Crafting
-- Network Traceroute with Scapy
+- [TCP SYN Scan with Scapy](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Advanced%20Scapy%20Usage/syn_scan.py)
+- [OS Fingerprinting](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Advanced%20Scapy%20Usage/os_fingerprint.py)
+- [Custom Protocol Crafting](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Advanced%20Scapy%20Usage/custom_protocol.py)
+- [Custom Protocol Server](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Advanced%20Scapy%20Usage/protocol_server.py)
+- [Custom Protocol Client](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Advanced%20Scapy%20Usage/protocol_client.py)
+- [Network Traceroute with Scapy](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Advanced%20Scapy%20Usage/traceroute_tool.py)
 
 ## 🔥 3. Network Attacks
 - DNS Spoofing / DNS Poisoning
@@ -118,22 +120,22 @@ This repository contains tools and scripts sourced from various GitHub repositor
 - [multi-threaded brute-force attack on a WordPress login page](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Networking/multi-threaded%20brute-force%20attack%20on%20a%20WordPress%20login%20page.md)
 
 ### Web Vulnerability Testing
-- SQL Injection Detection & Exploitation
-- XSS Payload Injection Tester (Reflected / Stored / DOM)
-- CSRF Token Bypass
-- XXE Injection Tester
-- SSRF Detection Script
-- LFI / RFI Scanner
-- JWT Token Manipulation
-- CORS Misconfiguration Scanner
-- GraphQL Enumeration & Fuzzing
-- Cookie Manipulation / Session Hijacking
-- HTTP Request Smuggling
-- OAuth Attack Scripts
+- [SQL Injection Detection & Exploitation](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Web%20Vulnerability%20Testing/scripts/sql_injection_tester.py)
+- [XSS Payload Injection Tester (Reflected / Stored / DOM)](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Web%20Vulnerability%20Testing/scripts/xss_tester.py)
+- [CSRF Token Bypass](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Web%20Vulnerability%20Testing/scripts/csrf_bypass_tester.py)
+- [XXE Injection Tester](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Web%20Vulnerability%20Testing/scripts/xxe_tester.py)
+- [SSRF Detection Script](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Web%20Vulnerability%20Testing/scripts/ssrf_detector.py)
+- [LFI / RFI Scanner](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Web%20Vulnerability%20Testing/scripts/lfi_rfi_scanner.py)
+- [JWT Token Manipulation](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Web%20Vulnerability%20Testing/scripts/jwt_manipulator.py)
+- [CORS Misconfiguration Scanner](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Web%20Vulnerability%20Testing/scripts/cors_scanner.py)
+- [GraphQL Enumeration & Fuzzing](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Web%20Vulnerability%20Testing/scripts/graphql_fuzzer.py)
+- [Cookie Manipulation / Session Hijacking](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Web%20Vulnerability%20Testing/scripts/cookie_manipulator.py)
+- [HTTP Request Smuggling](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Web%20Vulnerability%20Testing/scripts/http_smuggling.py)
+- [OAuth Attack Scripts](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Web%20Vulnerability%20Testing/scripts/oauth_attacker.py)
 
 ### Web Scraping & Reconnaissance
-- Web Scraper / Crawler for Recon (BeautifulSoup / Selenium)
-- REST API Fuzzer
+- [Web Scraper / Crawler for Recon (BeautifulSoup / Selenium)](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Web%20Scraping%20%26%20Reconnaissance/script/web_recon_crawler.py)
+- [REST API Fuzzer](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Web%20Scraping%20%26%20Reconnaissance/script/rest_api_fuzzer.py)
 
 ## 🔧 5. Burp Suite Extensions & Fuzzing
 
@@ -146,14 +148,14 @@ This repository contains tools and scripts sourced from various GitHub repositor
 - [WHOIS Lookup Automation](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Reconnaissance%20%26%20OSINT/WHOIS%20Lookup.md)
 - [DNS Enumeration (Subdomains)](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Reconnaissance%20%26%20OSINT/DNS%20Enumeration.md)
 - [Google Dorking Automation](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Reconnaissance%20%26%20OSINT/Google%20Dorking.md)
-- Shodan API Integration
-- Email Harvesting (`theHarvester`-style)
-- Banner Grabbing
-- SNMP Enumeration
-- SMB Enumeration (`impacket`)
-- NetBIOS / LLMNR Poisoning
-- EXIF Metadata Extraction from Images/Docs
-- Username / Social Media Enumeration
+- [Shodan API Integration](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Reconnaissance%20%26%20OSINT/scripts/shodan_recon.py)
+- [Email Harvesting (`theHarvester`-style)](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Reconnaissance%20%26%20OSINT/scripts/email_harvester.py)
+- [Banner Grabbing](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Reconnaissance%20%26%20OSINT/scripts/banner_grabber.py)
+- [SNMP Enumeration](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Reconnaissance%20%26%20OSINT/scripts/snmp_enumerator.py)
+- [SMB Enumeration (`impacket`)](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Reconnaissance%20%26%20OSINT/scripts/smb_enumerator.py)
+- [NetBIOS / LLMNR Poisoning](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Reconnaissance%20%26%20OSINT/scripts/netbios_poisoner.py)
+- [EXIF Metadata Extraction from Images/Docs](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Reconnaissance%20%26%20OSINT/scripts/exif_extractor.py)
+- [Username / Social Media Enumeration](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Reconnaissance%20%26%20OSINT/scripts/social_enumerator.py)
 
 ## 🦠 7. Trojaning & Malware Development
 

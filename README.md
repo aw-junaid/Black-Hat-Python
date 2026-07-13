@@ -181,31 +181,29 @@ This repository contains tools and scripts sourced from various GitHub repositor
 ## 🚀 9. Post-Exploitation & Privilege Escalation
 
 ### Shells & Backdoors
-- Reverse Shell Generator (TCP / HTTP / HTTPS)
-- Bind Shell
-- Meterpreter-Style Python Backdoor
-
+- [Reverse Shell Generator (TCP / HTTP / HTTPS)](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Shells%20%26%20Backdoors/reverse_shell.py)
+- [Bind Shell](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Shells%20%26%20Backdoors/bind_shell.py)
+- [Meterpreter-Style Python Backdoor](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Shells%20%26%20Backdoors/meterpreter.py)
 ### Windows Post-Exploitation
-- Windows Registry Manipulation
-- Token Impersonation (Windows)
-- Password Dumping from Memory
-- Pass-the-Hash Attack (`impacket`)
-- Mimikatz Integration / Credential Dumping
+- [Windows Registry Manipulation](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Windows%20Post-Exploitation/scripts/registry_manipulator.py)
+- [Token Impersonation (Windows)](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Windows%20Post-Exploitation/scripts/token_impersonator.py)
+- [Password Dumping from Memory](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Windows%20Post-Exploitation/scripts/memory_dumper.py)
+- [Pass-the-Hash Attack (`impacket`)](https://github.com/aw-junaid/Black-Hat-Python/edit/main/Python%20Tools/Windows%20Post-Exploitation/scripts/pass_the_hash.py)
+- [Mimikatz Integration / Credential Dumping](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Windows%20Post-Exploitation/scripts/mimikatz_integration.py)
 
 ### Linux Post-Exploitation
-- Linux SUID / GUID Enumeration
-- Cron Job Abuse Detection
+- [Linux SUID / GUID Enumeration](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Linux%20Post-Exploitation/script/linux_privesc_checker.py)
+- [Cron Job Abuse Detection](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Linux%20Post-Exploitation/script/suid_cron_analyzer.py)
 
 ### Persistence & Exfiltration
-- Persistence via Startup Scripts / Cron / Registry
-- Data Exfiltration over DNS / ICMP / Covert Channels
+- [Persistence via Startup Scripts / Cron / Registry](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Persistence%20%26%20Exfiltration/scripts/persistence.py)
+- [Data Exfiltration over DNS / ICMP / Covert Channels](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Persistence%20%26%20Exfiltration/scripts/exfiltrator.py)
 
 ## 🏰 10. Active Directory Attacks
-- Kerberoasting
-- Pass-the-Ticket
-- LDAP Enumeration (`ldap3`)
-- BloodHound Data Collection (`BloodHound.py`)
-- SMB Share Enumeration (`SMBMap`)
+- [Kerberoasting](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Active%20Directory%20Attacks/scripts/kerberoasting.py)
+- [Pass-the-Ticket](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Active%20Directory%20Attacks/scripts/pass_the_ticket.py)
+- [LDAP Enumeration ](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Active%20Directory%20Attacks/scripts/ldap_enumerator.py)
+- [BloodHound Data Collection ](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Active%20Directory%20Attacks/scripts/ad_collector.py)
 
 ## 🥷 11. Evasion & Anti-Forensics
 - Payload Obfuscation

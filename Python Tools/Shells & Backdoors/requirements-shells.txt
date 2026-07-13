@@ -1,0 +1,16 @@
+# Core Dependencies
+requests>=2.28.0
+cryptography>=39.0.0
+pyOpenSSL>=23.0.0
+
+# Windows Support
+pywin32>=305; platform_system == "Windows"
+wmi>=1.5.1; platform_system == "Windows"
+
+# Extended Features
+Pillow>=9.4.0
+psutil>=5.9.0
+netifaces>=0.11.0
+
+# Utilities
+colorama>=0.4.6

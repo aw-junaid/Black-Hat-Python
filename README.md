@@ -252,7 +252,8 @@
 - Clone Website for Credential Harvesting
 - URL Obfuscation Techniques
 
-## 16. Forensics & Memory Analysis- [Extract password hashes from a Windows memory dump using Volatility 3](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Forensics/extract%20password%20hashes%20from%20a%20Windows%20memory%20dump%20using%20Volatility%203.md) - Using Volatility 3 to find and extract password hashes from a memory image.
+## 16. Forensics & Memory Analysis
+- [Extract password hashes from a Windows memory dump using Volatility 3](https://github.com/aw-junaid/Black-HatPython/blob/main/Python%20Tools/Forensics/extract%20password%20hashes%20from%20a%20Windows%20memory%20dump%20using%20Volatility%203.md) - Using Volatility 3 to find and extract password hashes from a memory image.
 - [Redirect execution to the injected shellcode](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Forensics/redirect%20execution%20to%20the%20injected%20shellcode.md) - A technique for redirecting a process's execution flow to malicious code.
 - [Immunity Debugger](https://github.com/aw-junaid/Black-Hat-Python/blob/main/Python%20Tools/Forensics/Immunity%20Debugger.md) - Python scripts and plugins for the Immunity Debugger to aid in exploit development.
 
